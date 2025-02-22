@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeShare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>RecipeShare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#submit-recipe">Submit Recipe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="home" class="hero">
+        <h2>Welcome to RecipeShare</h2>
+        <p>Explore, share, and enjoy delicious recipes from around the world!</p>
+    </section>
+
+    
+    <section id="recipes" class="recipe-list">
+        <h2>Popular Recipes</h2>
+        <div class="recipe-card">
+            <img src="recipe1.jpg" alt="Recipe 1">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Delicious and creamy pasta with bacon and eggs.</p>
+            <a href="#">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="recipe2.jpg" alt="Recipe 2">
+            <h3>Chocolate Cake</h3>
+            <p>A rich and moist chocolate cake topped with frosting.</p>
+            <a href="#">View Recipe</a>
+        </div>
+        
+    </section>
+
+   
+    <section id="submit-recipe">
+        <h2>Submit Your Recipe</h2>
+        <form id="recipeForm">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" rows="4" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" rows="6" required></textarea>
+
+            <label for="recipe-image">Recipe Image URL:</label>
+            <input type="text" id="recipe-image" required>
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+        <div id="message"></div>
+    </section>
+
+  
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out!</p>
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 RecipeShare. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
